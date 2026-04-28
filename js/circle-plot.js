@@ -516,7 +516,7 @@ Assembly.prototype.drawPlot = function(parent_div, longest, circle_span) {
   count_txt.append('tspan').attr('baseline-shift', 'sub').attr('font-size', '75%').text(10)
   count_txt.append('tspan').text(' scaffold count (total ' + this.scaffold_count.toLocaleString() + ')');
   key.append('rect').attr('y', w * 1.5).attr('height', w).attr('width', w).attr('class', 'asm-pie asm-toggle');
-  key.append('text').attr('x', w + 3).attr('y', w * 2.5 - 1).text('Scaffold length (total ' + getReadableSeqSizeString(this.assembly, 0) + ')').attr('class', 'asm-key');
+  key.append('text').attr('x', w + 3).attr('y', w * 2.5 - 1).text('Scaffold length (total ' + getReadableSeqSizeString(this.assembly, 2) + ')').attr('class', 'asm-key');
 
 
   key.append('rect').attr('y', w * 3).attr('height', w).attr('width', w).attr('class', 'asm-longest_pie asm-toggle');
