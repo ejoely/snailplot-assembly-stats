@@ -542,7 +542,7 @@ Assembly.prototype.drawPlot = function(parent_div, longest, circle_span) {
     count_txt.append('tspan').attr('baseline-shift', 'sub').attr('font-size', '75%').text(10)
     count_txt.append('tspan').text(' contig count (total ' + this.contig_count.toLocaleString() + ')');
     key.append('rect').attr('y', w * 1.5).attr('height', w).attr('width', w).attr('class', 'asm-contig asm-toggle');
-    key.append('text').attr('x', w + 3).attr('y', w * 2.5 - 1).text('Contig length (total ' + getReadableSeqSizeString(this.contig_sum, 0) + ')').attr('class', 'asm-key');
+    key.append('text').attr('x', w + 3).attr('y', w * 2.5 - 1).text('Contig length (total ' + getReadableSeqSizeString(this.contig_sum, 2) + ')').attr('class', 'asm-key');
   }
 
   // add adjustable scale legend
